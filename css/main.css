@@ -1,0 +1,8 @@
+body {
+  background-color: yellow;
+}
+
+#map {
+	width: 200px;
+	height: 200px;
+}

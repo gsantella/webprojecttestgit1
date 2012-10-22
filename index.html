@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="js/jquery/jquery-1.8.2.min.js"></script>
+	<title>Our HTML5 Skeleton</title>
+	<script>
+		$(document).ready(function() {
+			$("#btn1").click(function() {
+				$("#ajax-section").load("file1.txt");
+			});
+		});
+	</script>
+</head>
+
+<body>
+    <input type="button" id="btn1">Go AJAX</input>
+	<p>This doesn't need refreshed!  This doesn't change!  This is static content!</p>
+	<p id="ajax-section">This will change because of AJAX</p>
+	<p>This doesn't need refreshed!  This doesn't change!  This is static content!</p>
+</body>
+
+</html>

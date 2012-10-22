@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Our HTML5 Skeleton</title>
+	<script>
+		function redirectToGoogle()
+		{
+			location.href = "http://www.google.com";
+		}
+		
+		function flipImage(object)
+		{
+			object.src = "images/bird2.jpg";	
+		}
+		
+		function flipImage2(object)
+		{
+			object.src = "images/bird.jpg";
+		}
+		
+	</script>
+</head>
+
+<body>
+	<p>Here is some content!</p>
+	<p>
+		<script>
+			var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			var today = new Date();
+			document.write(today.getHours() + ":" + today.getMinutes());
+		</script>
+	</p>
+	<p>
+		Happy <script>document.write(dayNames[today.getDay()]);</script>!
+		The dayNames array has <script>document.write(dayNames.length);</script> elements.
+		The dayNames are 
+		<script>
+			for(var name in dayNames)
+			{
+				document.write(dayNames[name] + "<br />");
+			}
+		</script>	
+	</p>
+	<p>
+		<script>document.write(location.href);</script>
+	</p>
+	<input type="button" onclick="redirectToGoogle()">Click Me</input>
+	
+	<img onmouseout="flipImage2(this)" onmouseover="flipImage(this)" src="images/bird.jpg" />
+	
+</body>
+
+</html>
